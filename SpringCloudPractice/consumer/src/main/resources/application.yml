@@ -1,7 +1,21 @@
 server:
   port: 80
 
+spring:
+  application:
+    name: consumer1
+
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:9051/eureka
+  instance:
+    instance-id: bruceConsumer1
+    prefer-ip-address: true
+
+info:
+  xxx.ooo: ooxx.cc
+  name: consumer.info
+  jdk_version: @java.version@
+  version: @version@
+  chi_test: 梅山小路用

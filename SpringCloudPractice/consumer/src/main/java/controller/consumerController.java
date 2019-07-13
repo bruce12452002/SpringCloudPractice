@@ -15,7 +15,7 @@ public class consumerController {
     @Resource
     private RestTemplate restTemplate;
 
-    private RestTemplateBuilder rtb;
+    //private RestTemplateBuilder rtb;
 
     @GetMapping("/xxx")
     public ApiBean get() {

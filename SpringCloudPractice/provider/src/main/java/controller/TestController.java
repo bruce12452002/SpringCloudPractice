@@ -8,7 +8,6 @@ import scp.ApiBean;
 public class TestController {
     @GetMapping("/testGet")
     public ApiBean get() {
-        System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
         ApiBean ab = new ApiBean();
         ab.setId(1);
         ab.setName("xxx");

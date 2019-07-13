@@ -1,6 +1,22 @@
 server:
   port: 9001
+
+spring:
+  application:
+    name: provider1
+
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:9051/eureka
+  instance:
+    instance-id: bruceProvider1
+    prefer-ip-address: true
+
+info:
+  xxx.ooo: xxoo.aa
+  name: provider.info
+  jdk_version: @java.version@
+  version: @version@
+  chi_test: 梅山小路用
+  ppp: @aaa.bbb@
