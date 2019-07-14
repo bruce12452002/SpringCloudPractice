@@ -9,6 +9,8 @@
         <module>consumer</module>
         <module>api</module>
         <module>eureka</module>
+        <module>eureka9052</module>
+        <module>eureka9053</module>
     </modules>
 
     <groupId>scp</groupId>

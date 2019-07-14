@@ -1,14 +1,13 @@
 server:
-  port: 9051
+  port: 9053
 
 eureka:
   instance:
-    hostname: xxx.ooo9051
+    hostname: xxx.ooo9053
   client:
     register-with-eureka: false     # 不註冊自己
     fetch-registry: false     # 取得註冊資訊，因為自己就是註冊中心，不需要取得註冊資訊
     service-url:
-      #defaultZone: http://localhost:${server.port}/eureka/       # Eureka Server 的位址
-      defaultZone: http://xxx.ooo9052:9052/eureka,http://xxx.ooo9053:9053/eureka
+      defaultZone: http://xxx.ooo9051:9051/eureka,http://xxx.ooo9052:9052/eureka
 
 
