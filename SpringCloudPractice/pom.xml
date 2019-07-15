@@ -11,6 +11,8 @@
         <module>eureka</module>
         <module>eureka9052</module>
         <module>eureka9053</module>
+        <module>provider9002</module>
+        <module>provider9003</module>
     </modules>
 
     <groupId>scp</groupId>

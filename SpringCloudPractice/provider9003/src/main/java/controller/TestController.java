@@ -19,7 +19,7 @@ public class TestController {
     public ApiBean get() {
         ApiBean ab = new ApiBean();
         ab.setId(1);
-        ab.setName("xxx9001");
+        ab.setName("xxx9003");
         return ab;
     }
 

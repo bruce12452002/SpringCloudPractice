@@ -1,5 +1,5 @@
 server:
-  port: 9001
+  port: 9002
 
 spring:
   application:
@@ -8,10 +8,9 @@ spring:
 eureka:
   client:
     service-url:
-      #defaultZone: http://localhost:9051/eureka
       defaultZone: http://xxx.ooo9051:9051/eureka,http://xxx.ooo9052:9052/eureka,http://xxx.ooo9053:9053/eureka
   instance:
-    instance-id: bruceProvider1
+    instance-id: bruceProvider2
     prefer-ip-address: true
 
 info:
@@ -19,5 +18,5 @@ info:
   name: provider.info
   jdk_version: @java.version@
   version: @version@
-  chi_test: 梅山小路用9001
+  chi_test: 梅山小路用9002
   ppp: @aaa.bbb@
