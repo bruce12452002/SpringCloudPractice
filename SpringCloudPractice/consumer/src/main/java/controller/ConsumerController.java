@@ -11,7 +11,7 @@ import javax.annotation.Resource;
 
 @RestController
 // @Import(RestTemplate.class)
-public class consumerController {
+public class ConsumerController {
 //    private static final String PROVIDER_URI = "http://localhost:9001";
     private static final String PROVIDER_URI = "http://"+ "provider1".toUpperCase(); // 網址列不分大小寫，但還是以 eureka 為準的好
 
