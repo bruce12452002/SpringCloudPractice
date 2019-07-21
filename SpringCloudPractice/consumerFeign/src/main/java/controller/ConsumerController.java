@@ -1,6 +1,7 @@
 package controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import scp.ApiBean;
 import service.MyService;
@@ -33,5 +34,10 @@ public class ConsumerController {
     @GetMapping("/xxx")
     public ApiBean get() {
         return myService.get();
+    }
+
+    @GetMapping("/ooo/{id}")
+    public ApiBean getHystrix(@PathVariable("id") Integer id) {
+        return myService.get(id);
     }
 }
