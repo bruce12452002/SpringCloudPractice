@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import scp.ApiBean;
 
-@FeignClient("PROVIDER1")
+@FeignClient(name = "PROVIDER1", fallbackFactory = MyFallbackFactory.class)
 public interface MyService {
     @GetMapping("/testGet")
     ApiBean get();

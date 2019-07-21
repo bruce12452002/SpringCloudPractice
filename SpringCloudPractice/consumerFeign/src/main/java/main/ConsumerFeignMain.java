@@ -7,7 +7,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan("controller")
+@ComponentScan({"controller", "service"})
 @EnableEurekaClient
 @EnableFeignClients("service")
 public class ConsumerFeignMain {

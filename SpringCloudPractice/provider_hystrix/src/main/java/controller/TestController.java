@@ -18,7 +18,7 @@ public class TestController {
         return ab;
     }
 
-    @HystrixCommand(fallbackMethod = "xxx")
+    // @HystrixCommand(fallbackMethod = "xxx")
     @GetMapping("/testHystrix/{id}")
     public ApiBean getXxxById(@PathVariable("id") Integer id) { // throws ParseException {
         if (id == 1) {
@@ -32,10 +32,10 @@ public class TestController {
         }
     }
 
-    private ApiBean xxx(@PathVariable("id") Integer id) {
-        ApiBean ab = new ApiBean();
-        ab.setId(-1);
-        ab.setName("沒有" + id);
-        return ab;
-    }
+//    private ApiBean xxx(@PathVariable("id") Integer id) {
+//        ApiBean ab = new ApiBean();
+//        ab.setId(-1);
+//        ab.setName("沒有" + id);
+//        return ab;
+//    }
 }

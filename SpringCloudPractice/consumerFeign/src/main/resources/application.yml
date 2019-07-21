@@ -21,3 +21,7 @@ info:
   jdk_version: @java.version@
   version: @version@
   chi_test: 梅山小路用
+
+feign:
+  hystrix:
+    enabled: true
