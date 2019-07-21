@@ -13,6 +13,7 @@
         <module>eureka9053</module>
         <module>provider9002</module>
         <module>provider9003</module>
+        <module>consumerFeign</module>
     </modules>
 
     <groupId>scp</groupId>
@@ -61,6 +62,7 @@
                 <version>1.18.8</version>
                 <scope>provided</scope>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
 
