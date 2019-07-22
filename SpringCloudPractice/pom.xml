@@ -15,6 +15,7 @@
         <module>provider9003</module>
         <module>consumerFeign</module>
         <module>provider_hystrix</module>
+        <module>hystrix_dashboard</module>
     </modules>
 
     <groupId>scp</groupId>
