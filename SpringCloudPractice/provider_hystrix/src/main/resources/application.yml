@@ -21,3 +21,9 @@ info:
   version: @version@
   chi_test: 梅山小路用9001
   ppp: @aaa.bbb@
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
