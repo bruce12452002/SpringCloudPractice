@@ -1,0 +1,31 @@
+server:
+  port: 9099
+
+spring:
+  application:
+    name: my-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://xxx.ooo9051:9051/eureka,http://xxx.ooo9052:9052/eureka,http://xxx.ooo9053:9053/eureka
+  instance:
+    instance-id: bruce-zuul
+    prefer-ip-address: true
+    nonSecurePort: ${server.port}
+
+info:
+  xxx.ooo: xxoo.aa
+  name: zuul.info
+  jdk_version: @java.version@
+  version: @version@
+  chi_test: 梅山小路用9099
+  ppp: @aaa.bbb@
+
+zuul:
+  routes:
+    mycloud: # 隨便寫
+      serviceId: PROVIDER1
+      path: /xxx/**
+  # prefix: /abc
+  # ignored-services: PROVIDER1 # 大寫微服務名稱
