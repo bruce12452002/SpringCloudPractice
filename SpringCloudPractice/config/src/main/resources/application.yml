@@ -1,0 +1,10 @@
+server:
+  port: 1111
+spring:
+  application:
+    name: config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/bruce12452002/SpringCloudConfigCenterPractice.git # git網址
