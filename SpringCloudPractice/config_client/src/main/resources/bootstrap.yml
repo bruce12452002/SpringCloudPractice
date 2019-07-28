@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      name: abcxxx # 讀 github 的 yml，但不能寫副檔名
+      profile: dev
+      label: master
+      uri: http://config.ooo1111:1111  # 找 config 伺服器

@@ -18,6 +18,7 @@
         <module>hystrix_dashboard</module>
         <module>zuul</module>
         <module>config</module>
+        <module>config_client</module>
     </modules>
 
     <groupId>scp</groupId>
