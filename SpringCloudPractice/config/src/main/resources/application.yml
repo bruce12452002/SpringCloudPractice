@@ -8,5 +8,5 @@ spring:
       server:
         git:
           uri: https://github.com/bruce12452002/SpringCloudConfigCenterPractice.git # git網址
-          username: #你的帳號
-          password: #你的密碼
+          #username: #你的帳號
+          #password: #你的密碼

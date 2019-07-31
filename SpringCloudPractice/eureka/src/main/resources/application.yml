@@ -10,5 +10,9 @@ eureka:
     service-url:
       #defaultZone: http://localhost:${server.port}/eureka/       # Eureka Server 的位址
       defaultZone: http://xxx.ooo9052:9052/eureka,http://xxx.ooo9053:9053/eureka
-
+spring:
+  security:
+    user:
+      name: xxx
+      password: ooo
 
